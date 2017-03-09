@@ -7,6 +7,8 @@
     {{ partial "nav.html" . }}
     {{ partial "hero.html" . }}
 
+    <a id="page-content"></a>
+
     {{ if .Site.Params.services.enable }}
       {{ partial "services.html" . }}
     {{ end }}
@@ -40,5 +42,6 @@
     {{ end }}
 
     {{ partial "js.html" . }}
+
   </body>
 </html>
